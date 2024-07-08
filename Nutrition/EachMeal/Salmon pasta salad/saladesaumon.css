@@ -1,0 +1,425 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+.container1{
+  background-color: white;
+  background-image: url("penne-carbonara-pasta-with-salmon.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+#navbar{
+
+    background-color: rgb(195, 195, 195,0.1); 
+        
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+#navbar a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+    margin-right: 20px;
+
+   }
+
+
+   .logo {
+    height: 65px; /* adjust to desired height */
+    margin-left: 50px;
+    margin-top: 8px;
+    object-fit: fill;
+
+    transition: 0.2s;
+  
+  }
+  
+  .logo:hover{
+    transform: scale(1.05);
+}
+
+
+.items{
+    margin-top: 0;
+    margin-right: 50px;
+}
+
+#navbar a:hover {
+    color: #6e9500;
+    text-decoration:none;
+    transform:scale(1.05);
+
+    
+    
+}
+#navbar .items a.active {
+    color: #6e9500
+    ;
+    
+}
+
+.container2{
+
+  margin-left: 20px ;
+  margin-top: 26%;
+  width: 60%;
+
+}
+
+.name{
+
+  color: white;
+  font-size: 80px;
+
+}
+
+.description{
+  margin-top: 5px;
+  color: #6e9500;
+}
+
+
+
+
+.explore-recipe{
+
+  border: none;
+  /* border-radius: 3px; */
+  padding: 8px;
+  width: 18%;
+  height: 20%;
+  cursor: pointer;
+  background-color: #6e9500
+  ;
+  margin-top: 15px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+
+
+
+
+}
+
+
+.container3{
+
+  background-color: transparent;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+
+}
+
+
+
+.informations{
+
+  margin-left: 3%;
+  margin-top: 8%;
+  background-color: transparent;
+  width: 50%;
+  height: 80%; 
+  
+}
+
+
+
+.title{
+
+  margin-bottom: 3%;
+  margin-top: 4%;
+
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  border-bottom: 0.5px solid #6e9500  ;
+height: 7%;
+
+
+}
+
+.unorderlist{
+margin-left: 2%;
+list-style: inside;
+list-style-type: none;
+
+}
+
+.unorderlist li::before {
+  content: "\2022";
+  color: #6e9500;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+
+
+.orderlist{
+  margin-left: 2%;
+
+}
+
+li{
+  margin-top: 2%; 
+  font-size: 20px;
+
+}
+
+
+p{
+  margin-bottom: 2%;
+  font-size: 20px;
+
+
+}
+
+
+.container4{
+
+  background-color: transparent;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+
+}
+table, th, td {
+  border:1px solid black;
+  font-size: 18px;
+  width: 70%;
+  border-collapse: collapse;
+  text-align: left;
+  padding: 4px;
+  
+  
+  
+}
+
+tr:nth-child(even) {background-color: #6e9500  ;}
+
+
+.container5{
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  /* align-items: center; */
+  display: flex;
+
+
+
+}
+
+.list5{
+  list-style-type: none;
+}
+
+.contact{
+  color: white;   
+   margin-left: 4%; 
+   margin-top: 15%;
+}
+.fit{
+  margin-bottom: 15%;
+  font-size: 4em;
+  letter-spacing:15px;
+
+}
+
+.fit a{
+  text-decoration: none;
+  color: white;
+}
+
+.fit a:hover {
+
+  color: #6e9500;
+
+}
+
+.tel{
+  margin-bottom: 5%;
+  font-size:18px;
+
+}
+.tel i{
+margin-right: 3%;
+color: #6e9500;
+
+}
+
+.tel a{
+
+  color: #ffffff;
+  text-decoration: none ;
+ }
+
+.tel a:hover{
+
+  color: #6e9500;
+  text-decoration: none;
+
+ }
+
+.mail{
+  font-size: 18px;
+  margin-bottom: 7%;
+}
+.mail i{
+  margin-right: 3%;
+  color: #6e9500;
+ 
+ }
+
+.mail a{
+
+  color: #ffffff;
+  text-decoration: none ;
+ }
+
+.mail a:hover{
+
+  color: #6e9500;
+  text-decoration: none;
+
+ }
+
+.titlecomment{
+  font-size:18px;
+  
+}
+
+.commentaire{
+
+  border-bottom: 1px solid rgb(255, 255, 255);
+  width: 100%;
+
+
+}
+
+.commentaire input{
+  margin-top: 3%;
+  background : rgb(0, 0, 0);
+  width: 100%;
+  height: 4vh;
+  border: none;
+  outline: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  
+}
+
+
+.sendcomment{
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.2s;
+  font-weight: 200;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  padding: 0.1% 0.5%;
+  margin-top: 5%;
+  width: 30%;
+}
+
+.sendcomment:hover{
+  border: 2px solid #6e9500;
+  color: #6e9500;
+  transform: scaleX(1.1);
+}
+
+
+.menulist{
+  color: white;
+  font-size: 20px;
+  letter-spacing:3px;
+  margin-left: 45%;
+  margin-top: 20%;
+
+}
+
+
+.menulist a {
+   
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+
+.menulist a:hover {
+
+  text-decoration: none;
+  color: #6e9500;
+
+  
+
+}
+
+
+
+
+.menulist li {
+
+  margin-top: 10%;
+
+}
+
+.socialmedia{
+  color: white;
+  margin-top: 45%; 
+
+
+ }
+
+ .socialmedia a{
+  margin-left: 4px;
+ }
+
+ .socialmedia p{
+  color: white; 
+
+ }
+
+ .socialmedia a i:hover{
+  color: #6e9500;
+
+}
+
+ .fa-brands {
+  color: white;
+
+ }

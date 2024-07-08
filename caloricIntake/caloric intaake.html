@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Caloric Intake and Body Fat Calculator</title>
+  <link rel="stylesheet" href="caloricss.css">
+  <script src="caloricjs.js"></script>
+  <script src="https://kit.fontawesome.com/150a1a82cd.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="../Logos/fa6.png">
+
+</head>
+<body>
+
+
+
+
+  <div class="container1">
+    <div id="navbar">
+      <div class="logodiv">
+        <img src="logo.png" alt="Logo" class="logo">
+      </div>
+
+      <div class="items">
+        <a href="../HomeFinal/Home.html">Home</a>
+        <a href="../Nutrition/NutritionPage/nutrition.html">Nutrition</a>
+        <a class="active" href="caloric intaake.html">Caloric Intake</a>
+        <a href="../Training CenterF/Training Center/training.html">Training</a>
+        <a href="#about">About</a>
+        <a href="../SL/signup.html"><i class="fa-solid fa-circle-user"></i></a>
+    </div>
+    </div>
+    <div class="extitle">
+      <h1>Caloric Intake and Body Fat Calculator</h1>
+    </div>
+
+
+
+
+
+  <div class="parentContainer">
+    <div class="calculatorContainer">
+      <div class="leftParent">
+        <div class="left"> 
+
+          <div class="calculator">
+            <input type="radio" class="radio calculatorRadio" name="calculatorType" id="caloricIntake" value="caloricIntake" onchange="switchCalculator()" checked>
+            <label class="calculatorLabel" for="caloricIntake">Caloric Intake & BMI</label>
+            <input type="radio" class="radio calculatorRadio" name="calculatorType" id="bodyFat" value="bodyFat" onchange="switchCalculator()">
+            <label class="calculatorLabel" for="bodyFat">Body Fat Percentage</label>
+          </div>
+
+
+          <div id="caloricIntakeForm">
+            <form>
+              <div class="bodyparameters">
+                <h2>Body Parameters</h2>
+                <div class="genderdiv">
+                  <input class="radio" type="radio" name="gender" id="male" value="male" checked>
+                  <label class="label maleLabel" for="male">Male</label>
+                  <input class="radio" type="radio" name="gender" id="female" value="female">
+                  <label class="label femaleLabel" for="female">Female</label>
+                </div>  
+
+                <div class="inputsdiv">
+                  <input type="number" id="weight" class="inputs" placeholder="weight" required>
+                  <input type="number" id="height" class="inputs" placeholder="height" required>
+                  <input type="number" id="age" class="inputs" placeholder="age" required>
+                </div>
+              </div>  
+
+              <div class="activityLevel">
+                <h2>Activity Level</h2>
+                <div class="activitydiv">
+                  <input class="radio activityRadio" type="radio" name="activityLevel" id="Sedentary" value="Sedentary" checked>
+                  <label class="label activityLabel SedentaryLabel" for="Sedentary">Sedentary</label>
+                  
+                  <input class="radio activityRadio" type="radio" name="activityLevel" id="Light" value="Light">
+                  <label class="label activityLabel LightLabel" for="Light">Light</label>
+
+                  <input class="radio activityRadio" type="radio" name="activityLevel" id="Moderate" value="Moderate">
+                  <label class="label activityLabel ModerateLabel" for="Moderate">Moderate</label>
+
+                  <input class="radio activityRadio" type="radio" name="activityLevel" id="Active" value="Active">
+                  <label class="label activityLabel ActiveLabel" for="Active">Active</label>
+
+                  <input class="radio activityRadio" type="radio" name="activityLevel" id="Intense" value="Intense">
+                  <label class="label activityLabel IntenseLabel" for="Intense">Intense</label>
+                </div>
+              </div>
+
+              <div class="goal">
+                <h2>Goal</h2>
+                <div class="goaldiv">
+                  <input class="radio goalRadio" type="radio" name="goal" id="maintain" value="maintain" checked>
+                  <label class="label goalLabel maintainLabel" for="maintain">Maintain</label>
+                  
+                  <input class="radio goalRadio" type="radio" name="goal" id="normalGain" value="normalGain">
+                  <label class="label goalLabel normalGainLabel" for="normalGain">normal Gain</label>
+
+                  <input class="radio goalRadio" type="radio" name="goal" id="fastGain" value="fastGain">
+                  <label class="label goalLabel fastGainLabel" for="fastGain">fast Gain</label>
+
+                  <input class="radio goalRadio" type="radio" name="goal" id="normalLoss" value="normalLoss">
+                  <label class="label goalLabel normalLossLabel" for="normalLoss">normal Loss</label>
+
+                  <input class="radio goalRadio" type="radio" name="goal" id="fastLoss" value="fastLoss">
+                  <label class="label goalLabel fastLossLabel" for="fastLoss">fast Loss</label>
+                </div>
+              </div>
+              
+              <div class="calculateDiv">
+                <input class="ClearButton" type="button" value="Reset" onclick="resetForm()">
+                <input class="CalculateButton" id="CalculateButton" type="button" value="Calculate" onclick="calculateCaloricIntake()">
+              </div>
+            </form>
+          </div>
+
+          <div id="bodyFatForm" style="display: none;">
+            <h2>Body Parameters</h2>
+            <form>
+              <div class="inputsdiv">
+                <input type="number" class="inputs" id="waist" placeholder="waist" required>
+                <input type="number" class="inputs" id="neck" placeholder="neck" required>
+                <input type="number" class="inputs" id="hips" placeholder="hips" required>
+                <input type="number" class="inputs" id="heightBodyFat" placeholder="height" required>
+              </div>
+
+              <div class="genderdiv">
+                <input class="radio genderRadio" type="radio" name="genderBodyFat" id="maleBodyFat" value="male" checked>
+                <label class="label genderLabel maleLabel" for="maleBodyFat">Male</label>
+                <input class="radio genderRadio" type="radio" name="genderBodyFat" id="femaleBodyFat" value="female">
+                <label class="label genderLabel femaleLabel" for="femaleBodyFat">Female</label>
+              </div>
+            
+              <div class="calculateDiv">
+                <input class="ClearButton" type="button" value="Reset" onclick="resetForm()">
+                <input class="CalculateButton" id="CalculateButton" type="button" value="Calculate" onclick="calculateBodyFat()">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="rightParent">
+        <div id="rightCaloricIntake" class="right">
+          <div class="ResultTitle"><h1>These are your daily needs</h1></div>
+
+          <div class="a">
+            <div class="b">
+              <div id="caloricIntakeResult"></div>
+              <h3>kcal</h3>
+            </div>
+            <div class="c"><div id="bmiResult"></div> </div>
+          </div>
+
+          <div class="macrosTitle"><h3>Your Daily Macros</h3></div>
+
+          <div class="boxes">
+
+            <div class="box">
+              <div id="proteinResult"></div>
+              <h2 class="elementType">Protein</h2>
+            </div>
+
+            <div class="box">
+              <div id="fatResult"></div>
+              <h2 class="elementType">Fat</h2>
+            </div>
+
+            <div class="box">
+              <div id="carbsResult"></div>
+              <h2 class="elementType">Carbs</h2>
+            </div>
+          </div>
+        </div>
+
+        <div id="rightBodyFat" class="right" style="display: none;">
+          <div class="ResultTitle"><h1>This is your body fat percentage</h1></div>
+          <div class="b">
+            <div id="bodyFatResult"></div>
+            <h3>%</h3>
+          </div>
+          <!-- <div id="bodyFatResult"></div> -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container5" id="about">
+    <div class="contact">
+        <ul>
+        <li class="fit"><a href="index.html">FITAREA</a><li> 
+        <li class="tel"> <i class="fa-solid fa-phone"></i> <a href="callto:0635441640">06 35 44 16 40</a></li>
+        <li class="mail"> <i class="fa-sharp fa-solid fa-envelope"></i><a href="mailto:fitarea77@gmail.com">fitarea77@gmail.com</a></li>
+        <li>
+            <form>
+                <label for="fname" class="titlecomment">Leave a comment to help us improve our website!</label>
+
+                <div class="commentaire">
+                    <input  type="text" id="fname" name="fname" placeholder="drop a comment">
+
+                </div>
+                <input  class="sendcomment" type="submit" value="Send">
+
+            </form> </li>
+          
+
+        </form> 
+
+        </ul>
+
+
+    </div>
+
+        <div class="menulist">
+            <ul > 
+                <a href="index.html"><li>Home</li></a>   
+                <a href="nutrition.html"><li>Nutrition</li></a>
+                <a href="nutrition.html#ba3"><li>Meals</li></a>
+                <a href=""><li>Calories</li></a>
+                <a href="exercices.html"><li>Training</li></a>
+           </ul>
+
+        </div>
+
+        <div class="socialmedia">
+            <p >Follow us <a href="https://www.instagram.com/fit_area7/" target="_blank"><i class="fa-brands fa-instagram"></i></a>  <a href=""><i class="fa-brands fa-facebook"></i></a> <a  href=""><i class="fa-brands fa-twitter"></i></a> </p>
+      
+        </div>
+  </div>
+
+</body>
+</html>

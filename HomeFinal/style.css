@@ -1,0 +1,495 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,800;1,900&display=swap');
+
+*{
+    margin: 0;
+ 
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+.container1{
+    background-color: rgb(53, 53, 53);
+    background-image: url("pushup.jpg");
+    background-size: cover;
+    background-position: 0 30px;
+    height: 120vh;
+    width: 100%;
+    overflow: hidden;
+}
+.container2{
+    background-color:white;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+.container3{
+    background-color: rgb(0, 0, 0);
+   
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container4{
+    /* background-color: rgb(240, 240, 240); */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.container5{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    /* align-items: center; */
+    display: flex;
+}
+
+#navbar{
+
+    background-color: rgba(0, 0, 0); 
+    /* background-color: rgba(46, 46, 46, 0.8); */
+        
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+#navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
+    transition: 0.2s;
+
+    
+}
+
+.logo {
+    height: 65px; /* adjust to desired height */
+    margin-left: 50px;
+    margin-top: 8px;
+    object-fit: fill;
+    transition: 0.2s;
+
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+
+/* .logo{
+    background-color: #4294ff;
+} */
+
+.items{
+    margin-top: 0;
+    margin-right: 50px;
+}
+
+#navbar a:hover {
+    /* color: #fd7e14; */
+    /* color: rgba(255, 255, 0, 0.648); */
+    color: #ffd700;
+
+    text-decoration:none;
+    transform: scale(1.06);
+    
+}
+#navbar .items a.active {
+    color: rgb(255, 215, 0);
+    /* color: #45A29E; */
+    
+    /* background-color: white; */
+}
+/* #homevideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+} */
+
+.explore{
+    margin-top: 40%;
+    margin-right: 35.5%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+.exploretext{
+    text-decoration: none;
+    font-size: large;
+    color: #ffd700;
+    letter-spacing: 0.5px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid #ffd700;
+    padding: 1% 2%;
+    width: 10%;
+}
+
+.exploretext:hover{
+    background-color: #ffd700;
+    color: #1a1a1a;
+    transform: scaleX(1.1);
+}
+
+
+
+.text{
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 190px 100px 0;
+    letter-spacing: 0.5px;
+    line-height: 67px;
+}
+
+.imgS {
+    background-color: #f2f2f2;
+    width: 45%;
+    height: 60vh;
+    /* margin-top: 180px; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    border: 3px solid #ffd700;
+    
+}
+
+
+.H1{
+    transition: 0.3s;
+
+}
+
+.imgS:hover h1{
+    transform: scale(1.1);
+    color: white;
+}
+
+.imgScontent{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+    margin-right: 230px;
+
+}
+.img1{
+    background-image: url("nutrition.jpg");
+    background-position: 75% 65%;
+    float: left;
+}
+
+.img2{
+    float: right;
+    background-image: url(calories.jpg);
+    background-size: cover;
+
+
+    background-position: 75% 65%;
+}
+
+.imgScontent h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+.redirect{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 50px;
+    margin-top: 22px;
+    display: inline;
+    
+}
+
+.exediv{
+    background-color: #000000;
+    width: 100%;
+    height: 55vh;
+    margin-top: 180px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+}
+.musclediv{
+    background-color: #ffffff;
+    width: 25%;
+    height: 35vh;
+    margin: 40px;
+    display: inline-block;
+    line-height: 35vh;
+    vertical-align: middle;
+    border: 1px solid #ffd700;
+}
+
+.m1{
+    background-image: url(musclesImages/chest.jpg);
+    background-position: 70% 25%;
+    background-size: cover;
+}
+.m2{
+    background-image: url(musclesImages/back.jpg);
+    background-position: 70% 25%;
+    background-size: cover;
+}
+.m3{
+    background-image: url(musclesImages/biceps.jpg);
+    background-position: 70% 25%;
+    background-size: cover;
+}
+.m4{
+    background-image: url(musclesImages/triceps.jpg);
+    background-position: 70% 25%;
+    background-size: cover;
+}
+.m5{
+    background-image: url(musclesImages/Shoulders.jpg);
+    background-position: 70% 25%;
+    background-size: cover;
+}
+.m6{
+    background-image: url(musclesImages/abss.jpg);
+    background-position: 70% 25%;
+    background-size: cover;
+}
+.m7{
+    background-image: url(musclesImages/quadri.jpg);
+    background-position: 70% 25%;
+    background-size: cover;
+}
+.m8{
+    background-image: url(musclesImages/calf.jpg);
+    background-position: 70% 25%;
+    background-size: cover;
+}
+
+.Titlec4{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 55px;
+    margin-left: 35px;
+    color: #ffd700;
+    /* padding: 0; */
+    /* position: sticky; */
+}
+
+/* about us  */
+
+ul {
+    list-style-type: none;;
+  }
+
+.contact{
+    color: white;   
+     margin-left: 4%; 
+     margin-top: 15%;
+}
+.fit{
+    margin-bottom: 15%;
+    font-size: 4em;
+    letter-spacing:15px;
+    
+
+}
+
+.fit a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.fit a:hover {
+
+    color: #ffd700;
+
+}
+
+
+.tel{
+    margin-bottom: 5%;
+    font-size:18px;
+
+}
+.tel i{
+ margin-right: 3%;
+ color: #ffd700;
+
+}
+
+.tel a{
+
+    color: #ffffff;
+    text-decoration: none ;
+   }
+
+.tel a:hover{
+
+    color: #ffd700;
+    text-decoration: none;
+
+   }
+
+.mail{
+    font-size: 18px;
+    margin-bottom: 7%;
+}
+.mail i{
+    margin-right: 3%;
+    color: #ffd700;
+   
+   }
+
+.mail a{
+
+    color: #ffffff;
+    text-decoration: none ;
+   }
+
+.mail a:hover{
+
+    color: rgb(255, 215, 0);
+    text-decoration: none;
+
+   }
+
+.titlecomment{
+    font-size:18px;
+   
+}
+
+.commentaire{
+
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+
+
+  }
+
+.commentaire input{
+    margin-top: 3%;
+    background : rgb(0, 0, 0);
+    width: 100%;
+    height: 4vh;
+    border: none;
+    outline: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    
+}
+
+
+.sendcomment{
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+    font-weight: 200;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: 0.1% 0.5%;
+    margin-top: 5%;
+    width: 30%;
+}
+
+.sendcomment:hover{
+    border: 2px solid #ffd700;
+    color: #ffd700;
+    transform: scaleX(1.1);
+}
+
+
+
+
+.menulist{
+    color: white;
+    font-size: 20px;
+    letter-spacing:3px;
+    margin-left: 45%;
+    margin-top: 20%;
+
+}
+
+
+.menulist a {
+     
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+.menulist a:hover {
+
+text-decoration: none;
+color: #ffd700;
+    
+ 
+ }
+
+ 
+ 
+
+.menulist li {
+
+    margin-top: 10%;
+ 
+ }
+
+
+
+   .socialmedia{
+    color: white;
+    margin-top: 45%; 
+
+
+   }
+
+   .socialmedia p{
+    color: white;
+    /* margin-top: 45%;  */
+    /* font-family: 'Poppins', sans-serif; */
+
+   }
+
+   .socialmedia a{
+    margin-left: 4px;
+   }
+   
+
+   .socialmedia a i:hover{
+color: #ffd700;   }
+
+   .fa-brands {
+    color: white;
+
+   }
+
+
+   .container5 a,.container5 li,.container5 label{
+    font-family: 'Times New Roman', Times, serif;
+   }

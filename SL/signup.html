@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/150a1a82cd.js" crossorigin="anonymous"></script>
+    <!-- <script src="index.js"></script> -->
+    <script src="index.js"></script>
+    <link rel="icon" href="../Logos/fa6.png">
+
+</head>
+
+
+<body> 
+
+    <div class="backcontainer">
+        <!-- <img src="logo_transparent.png" alt="logo" class="logo"> -->
+        <div class="parent">
+            <div class= "container1" >
+                <!-- <img src="logoY.png" alt="logo" class="logo"> -->
+                <a href="../HomeFinal/Home.html"><h1 class="fitareaTitle">FITAREA</h1></a>
+            </div>
+
+            <div class="formbg">
+                <!-- <img src="logo_transparent.png" alt="logo" class="logo"> -->
+
+                
+                <div class="formbox">
+
+                    <div class="pageHeader">
+                        <div class="title">
+                            <h1>Get started</h1>
+                            <p id="text">Create your account now </p> 
+                        </div>
+
+                        <div class="formSelector">
+                            <input type="radio" class="radio" name="formSelect" id="signup" value="Signup" onchange="SwitchForm()" checked>
+                            <label class="label" for="signup">Sign Up</label>
+                            <input type="radio" class="radio" name="formSelect" id="login" value="Login" onchange="SwitchForm()">
+                            <label class="label" for="login">Login</label>
+                        </div>
+                    </div>
+
+                    
+                    <div id="signupForm">
+                        <form>
+                            <div class="input-group">
+                        
+                                <div class="input-field"> 
+                                    <i class="fa-solid fa-user"></i>           
+                                    <input type="text" placeholder="Full name" id="fullname" name="fullname" required> 
+                                </div> 
+                                
+                        
+                                <div class="input-field"> 
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" placeholder="Email" id="mail" name="email" required>
+                                </div> 
+                        
+                                
+                                <div class="input-field"> 
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="password" placeholder="Password" id="password" name="password" required >
+                                </div> 
+                                
+                                <div class="input-field"> 
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="password" placeholder="Confirm password" id="password" name="password" required >
+                                </div> 
+                        
+                                <!-- <div class="input-field"> 
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="password" placeholder="Confirm password" id="password" required>
+                                </div>  -->
+                        
+                                <button class="signupbutton"> Sign up </button> 
+                        
+                                <!-- <div class="login">
+                                    <p> Already have an account ? <a href="login.html"> Login</a> </p>
+                                </div> -->
+                            </div>
+                        </form>
+                    
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    <div id="loginForm" style="display: none;">
+                        
+                        <form>
+                            <div class="input-group">
+                        
+                                
+                                <div class="input-field"> 
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" placeholder="Email" id="mail" name="email" required>
+                                </div> 
+                        
+                                
+                                <div class="input-field"> 
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="password" placeholder="Password" id="password" name="password" required >
+                                </div> 
+                                
+                                
+                                <!-- <div class="input-field"> 
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="password" placeholder="Confirm password" id="password" required>
+                                </div>  -->
+                        
+                                <button class="signupbutton"> Sign up </button> 
+                        
+                                <!-- <div class="login">
+                                    <p> Already have an account ? <a href="login.html"> Login</a> </p>
+                                </div> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
